@@ -2,19 +2,21 @@ package dat.sem2.randomdanes;
 
 /**
  * The purpose of this class is is to represent contact persons
+ *
  * @author kasper
  */
 class Person {
-    private final String name;
+
+    private final String navn;
     private final String telefon;
 
-    public Person(String name, String phoneNo) {
-        this.name = name;
-        this.telefon = phoneNo;
+    public Person(String navn, String telefon) {
+        this.navn = navn;
+        this.telefon = telefon;
     }
 
     public String getName() {
-        return name;
+        return navn;
     }
 
     public String getPhoneNo() {
@@ -23,7 +25,6 @@ class Person {
 
     @Override
     public String toString() {
-        return name + " ph: " + telefon;
+        return navn + " ph: " + telefon;
     }
-    
 }
